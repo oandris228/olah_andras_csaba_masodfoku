@@ -34,15 +34,14 @@ public class HelloController {
                 if (sqrttemp < 0) {
                     result1.setText("Sqrt Error");
                 } else {
-                    System.out.println("hehe3");
-                    double d = (-a + sqrttemp)/2*a;
-                    double e = (-a - Math.sqrt(Math.pow(b, 2)-4*a*c))/2*a;
-
+                    double d = (-b + sqrttemp)/2*a;
+                    double e = (-b - sqrttemp)/2*a;
+                    System.out.println(Double.toString(d));
                     if (d == e) {
                         result1.setText("x = " + d);
                         result2.setText("");
                     } else {
-                        System.out.println("hehe4");
+                        System.out.println(d + " " + e);
                         result1.setText("x1 = " + d);
                         result2.setText("x2 = " + e);
 
